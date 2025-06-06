@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: linear-gradient(to right, #ffffff, #f9f9f9, #f1f1f1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #059669;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: #5D8374;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #3d5549;
+}
