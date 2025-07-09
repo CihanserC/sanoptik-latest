@@ -5,39 +5,54 @@ import animationVideo2 from '../assets/animations/animation-2.mp4';
 const HomeSection = () => {
   return (
     <div className="relative">
-      {/* Main Section with Background */}
-      <section className="relative min-h-screen bg-white">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src={glassesImage}
-            alt="Gözlük görseli"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-        </div>
-
-        {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="max-w-xl">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              Gözlüğün Sanatı, Sanoptik'te Başlar
-            </h1>
-            <div className="space-y-6 text-white">
-              <p className="text-lg leading-relaxed">
-                Sanoptik, kaliteli gözlükleri şıklıkla buluştururken her müşterisine mükemmel bir alışveriş deneyimi sunmayı amaçlar.
-                Göz sağlığınızı ön planda tutan optik çözümlerimiz, hem günlük kullanım hem de özel ihtiyaçlara yönelik geniş ürün yelpazemizle hizmetinizde.
-              </p>
-              <h2 className="text-2xl font-semibold text-emerald-400">
-                Gözlükte Güven, Şıklıkta Öncü
-              </h2>
-              <p className="text-lg leading-relaxed">
-                Yurt içi ve yurt dışından özenle seçtiğimiz markalarla, her zevke ve ihtiyaca uygun modelleri Sanoptik güvencesiyle sunuyoruz.
-                Sadece bir gözlük değil, size özel bir deneyim yaşatmayı hedefliyoruz.
-              </p>
+      {/* Writings Section */}
+      <section className="relative bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col items-center rounded-2xl shadow-md">
+          <h1 className="text-3xl sm:text-4xl font-bold text-emerald-700 mb-6 text-left w-full">
+            Hakkımızda
+          </h1>
+          <p className="text-base sm:text-lg text-gray-700 mb-8 w-full">
+            SAN Optik olarak, müşterilerimize en kaliteli göz sağlığı çözümlerini sunmayı hedefliyoruz.
+            Uzun yıllara dayanan tecrübemiz ve profesyonel ekibimizle, her müşterimize özel hizmet sunuyoruz.
+          </p>
+          <h2 className="text-2xl font-semibold text-emerald-600 mb-4 w-full">
+            Gözlükte Güven, Şıklıkta Öncü
+          </h2>
+          <p className="text-base sm:text-lg text-gray-700 mb-10 w-full">
+            Dünya'nın önde gelen markalarıyla çalışarak, en son teknoloji ve modayı sizlerle buluşturuyoruz.
+            Göz sağlığınız ve görsel konforunuz bizim önceliğimizdir.
+          </p>
+          {/* Example features row */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full mt-4">
+            <div className="flex flex-col items-center">
+              <div className="bg-emerald-800 text-white rounded-lg p-4 mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 21C12 21 4 13.5 4 8.5C4 5.42 6.42 3 9.5 3C11.24 3 12.91 3.81 14 5.08C15.09 3.81 16.76 3 18.5 3C21.58 3 24 5.42 24 8.5C24 13.5 16 21 16 21H12Z" />
+                </svg>
+              </div>
+              <span className="font-bold text-emerald-800 mb-1">SAĞLIĞINIZ ÖNEMLİ</span>
+              <span className="text-gray-600 text-center text-sm">Yaptığımız işin ciddiyetinin farkındayız. Sağlığınızı düşünüyoruz.</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="bg-emerald-800 text-white rounded-lg p-4 mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a5 5 0 00-10 0v2a5 5 0 0010 0zM12 17v2m0 0h-2m2 0h2" />
+                </svg>
+              </div>
+              <span className="font-bold text-emerald-800 mb-1">ORJİNAL ÜRÜN</span>
+              <span className="text-gray-600 text-center text-sm">Dünyaca ünlü markalarla çalışıyoruz. Orijinal olmayan ürün satmıyoruz.</span>
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Image Section */}
+      <section className="relative bg-white flex justify-center py-10">
+        <img
+          src={glassesImage}
+          alt="Gözlük görseli"
+          className="w-full max-w-3xl h-auto object-contain rounded-xl shadow-lg"
+        />
       </section>
 
       {/* Animation Video Section */}

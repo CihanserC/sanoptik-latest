@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
@@ -6,6 +6,7 @@ import animationVideo3 from '../assets/animations/animation-3.mp4';
 import HomeTwo from './Home-2';
 
 export default function HomeOne() {
+  const videoRef = useRef(null);
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -15,10 +16,17 @@ export default function HomeOne() {
     }
   };
 
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5;
+    }
+  }, []);
+
   return (
     <>
       <div className="relative w-full h-screen overflow-hidden font-sans bg-emerald-950">
         <video
+          ref={videoRef}
           autoPlay
           loop
           muted
@@ -49,13 +57,57 @@ export default function HomeOne() {
             Dünyaca ünlü markalar ve uzman ekibimizle hizmetinizdeyiz.
           </motion.p>
           <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
-            className="mt-6 px-6 py-3 bg-emerald-500 text-white rounded-full text-lg font-medium hover:bg-emerald-600 transition"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            whileHover={{ 
+              scale: 1.02,
+            }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ 
+              duration: 0.2,
+              ease: [0.23, 1, 0.32, 1]
+            }}
+            className="mt-12 px-10 py-5 
+                     relative
+                     from-emerald-400 to-emerald-600 bg-gradient-to-r
+                     backdrop-blur-[2px]
+                     border border-white/20
+                     rounded-full
+                     text-white text-xl font-medium
+                     shadow-[0_0_20px_rgba(16,185,129,0.3)]
+                     flex items-center gap-4
+                     group
+                     overflow-hidden
+                     transform-gpu" // Added transform-gpu for sharper rendering
             onClick={handleClick}
           >
-            SAN Optik'i Keşfedin
+            <span className="relative z-20 group-hover:translate-x-[-4px] transition-transform will-change-transform">
+              SAN Optik'i Keşfedin
+            </span>
+            <motion.div
+              className="relative z-20 group-hover:translate-x-[4px] transition-transform will-change-transform"
+              animate={{ x: [0, 4, 0] }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            >
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                className="h-6 w-6"
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2"
+                strokeLinecap="round" 
+                strokeLinejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </motion.div>
+            <div className="absolute inset-0 z-10 bg-gradient-to-r from-emerald-600 to-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </motion.button>
         </div>
       </div>
