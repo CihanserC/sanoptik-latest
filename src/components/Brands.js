@@ -30,7 +30,9 @@ const brandNames = [
   'Versace',
   'Burberry',
   'Caretta',
-  'Goldberry'
+  'Goldberry',
+  'Miu Miu',
+  'Prada'
 ];
 
 // .png varsayılan uzantı olarak varsayılıyor

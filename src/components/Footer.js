@@ -4,9 +4,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <>
-      {/* Contact Section */}
-      <section id="contact" className="bg-emerald-600 text-white py-8">
+    <footer className="bg-emerald-900">
+      {/* Contact and Map Section */}
+      <div className="text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-6">İletişim</h2>
           <div className="flex flex-col md:flex-row gap-6">
@@ -55,16 +55,16 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Footer Section */}
-      <footer className="bg-emerald-800 text-white py-3">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <span className="text-xs">&copy; {currentYear} SAN Optik. Tüm hakları saklıdır.</span>
-          <span className="text-xs">Gizlilik Politikası</span>
+      {/* Copyright Bar */}
+      <div className="border-t border-emerald-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+          <span className="text-xs text-white">&copy; {currentYear} SAN Optik. Tüm hakları saklıdır.</span>
+          <span className="text-xs text-white">Gizlilik Politikası</span>
         </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 };
 

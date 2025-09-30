@@ -2,9 +2,47 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
+  padding: 10px 20px;
   background: linear-gradient(to right, #ffffff, #f9f9f9, #f1f1f1);
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Mobil menü için hamburger icon gösterimi */
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .link {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .logo {

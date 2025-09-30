@@ -24,16 +24,36 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerOffset = 100; // Adjust this value based on your header height plus some padding
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
+    if (sectionId === 'home') {
       window.scrollTo({
-        top: offsetPosition,
+        top: 0,
         behavior: "smooth"
       });
+    } else if (sectionId === 'contact') {
+      // Find the footer element
+      const footerElement = document.querySelector('footer');
+      if (footerElement) {
+        const headerOffset = 100;
+        const elementPosition = footerElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const headerOffset = 100;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
     }
   };
 

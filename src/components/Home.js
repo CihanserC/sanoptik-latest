@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import animationVideo2 from '../assets/animations/animation-2.mp4';
 import animationVideo3 from '../assets/animations/animation-3.mp4';
@@ -96,35 +96,38 @@ const Home = () => {
       </div>
 
       {/* Section 2 - Content with Background Image */}
-      <div id="section2" className="relative">
-        <section className="relative min-h-screen bg-white">
-          <div className="absolute inset-0 z-0">
-            <img
-              src={glassesImage}
-              alt="Gözlük görseli"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-          </div>
+        <div id="section2" className="relative">
+          <section className="relative min-h-screen bg-white">
+            <div className="absolute inset-0 z-0">
+          <img src={glassesImage} alt="Gözlük görseli" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+            </div>
 
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div className="max-w-xl">
-              <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-                Gözlüğün Sanatı, Sanoptik'te Başlar
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="max-w-4xl"> {/* Increased max width */}
+            <div className="space-y-6 text-white">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 whitespace-nowrap">
+                Gözlüğün Sanatı, San optik'te Başlar
               </h1>
-              <div className="space-y-6 text-white">
-                <p className="text-lg leading-relaxed">
-                  Sanoptik, kaliteli gözlükleri şıklıkla buluştururken her müşterisine mükemmel bir alışveriş deneyimi sunmayı amaçlar.
-                  Göz sağlığınızı ön planda tutan optik çözümlerimiz, hem günlük kullanım hem de özel ihtiyaçlara yönelik geniş ürün yelpazemizle hizmetinizde.
-                </p>
-                <h2 className="text-2xl font-semibold text-emerald-400">
-                  Gözlükte Güven, Şıklıkta Öncü
-                </h2>
-                <p className="text-lg leading-relaxed">
-                  Yurt içi ve yurt dışından özenle seçtiğimiz markalarla, her zevke ve ihtiyaca uygun modelleri Sanoptik güvencesiyle sunuyoruz.
-                  Sadece bir gözlük değil, size özel bir deneyim yaşatmayı hedefliyoruz.
-                </p>
-              </div>
+              <p className="text-lg leading-relaxed">
+                San optik, kaliteli gözlükleri şıklıkla buluştururken her müşterisine mükemmel bir alışveriş deneyimi sunmayı amaçlar. 
+                Göz sağlığınızı ön planda tutan optik çözümlerimiz, hem günlük kullanım hem de özel ihtiyaçlara yönelik geniş ürün yelpazemizle hizmetinizde. 
+                Modern teknolojilerle donatılmış mağazamızda, uzman ekibimiz eşliğinde göz sağlığınız için en doğru seçimi yapmanıza yardımcı oluyoruz. 
+                Her biri özenle seçilmiş çerçevelerimiz ve kaliteli lenslerimizle, görme konforunuzu maksimum seviyeye çıkarmayı hedefliyoruz.
+              </p>
+
+              <h2 className="text-2xl font-semibold text-emerald-400">
+                Gözlükte Güven, Şıklıkta Öncü
+              </h2>
+              <p className="text-lg leading-relaxed">
+                Yurt içi ve yurt dışından özenle seçtiğimiz markalarla, her zevke ve ihtiyaca uygun modelleri Sanoptik güvencesiyle sunuyoruz. 
+                Sadece bir gözlük değil, size özel bir deneyim yaşatmayı hedefliyoruz. 
+                En son moda trendlerini yakından takip ederek, klasikten moderne, sportiften elegantta uzanan geniş bir yelpazede seçenekler sunuyoruz. 
+                Deneyimli optisyenlerimiz, yüz hatlarınıza ve tarzınıza en uygun çerçeveyi bulmanızda size rehberlik ederken, 
+                son teknoloji ölçüm cihazlarımızla göz sağlığınızı koruma altına alıyoruz. 
+                Satış sonrası hizmetlerimiz ve profesyonel destek ekibimizle, memnuniyetinizi sürekli kılmak için çalışıyoruz.
+              </p>
+            </div>
             </div>
           </div>
         </section>
@@ -149,13 +152,13 @@ const Home = () => {
         href="https://wa.me/905345679808"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 z-50 flex items-center justify-center group"
+        className="fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-lg transition-all duration-300 z-50 flex items-center justify-center group"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          className="w-7 h-7"
+          className="w-13 h-13"
         >
           <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.042 22l4.917-1.29A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.476 0-2.874-.377-4.08-1.045l-.292-.159-3.026.793.804-2.938-.177-.34A7.957 7.957 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8zm4.727-5.919c-.294-.147-1.735-.857-2.003-.954-.268-.097-.463-.145-.657.145-.194.29-.751.954-.921 1.15-.17.195-.34.22-.634.073-.294-.147-1.241-.457-2.363-1.456-.873-.778-1.462-1.739-1.632-2.033-.17-.294-.018-.453.128-.6.13-.13.294-.34.44-.51.147-.17.196-.292.294-.487.098-.195.049-.366-.024-.512-.073-.146-.657-1.583-.901-2.169-.244-.585-.487-.487-.657-.487-.17 0-.366-.024-.56-.024-.194 0-.51.073-.778.366-.268.293-1.022.954-1.022 2.325 0 1.371 1.022 2.742 1.168 2.937.146.195 2.026 3.079 4.91 4.318.685.293 1.22.469 1.635.603.687.219 1.314.19 1.803.115.55-.073 1.755-.706 2.003-1.389.248-.683.248-1.27.173-1.39-.073-.122-.27-.195-.563-.342z" />
         </svg>

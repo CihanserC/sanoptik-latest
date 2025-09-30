@@ -8,21 +8,23 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen flex flex-col">
-        <Header />
-        <main className="flex-grow">
-          <Home />
-          <div id="brands">
-            <Brands />
-          </div>
-          <div id="about">
-            <AboutUs />
-          </div>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <div className="relative overflow-x-hidden w-full">
+      <Router>
+        <div className="min-h-screen flex flex-col">
+          <Header />
+          <main className="flex-grow">
+            <Home />
+            <div id="brands">
+              <Brands />
+            </div>
+            <div id="about">
+              <AboutUs />
+            </div>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </div>
   );
 }
 
