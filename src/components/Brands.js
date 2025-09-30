@@ -32,7 +32,16 @@ const brandNames = [
   'Caretta',
   'Goldberry',
   'Miu Miu',
-  'Prada'
+  'Prada',
+  'Dolce Gabbana',
+  'Persol',
+  'Oakley',
+  'Humphreys',
+  'Titanflex',
+  'Fineline',
+  'Eschbah',
+  'Rococo',
+  'Just Cavalli'
 ];
 
 // .png varsayılan uzantı olarak varsayılıyor
