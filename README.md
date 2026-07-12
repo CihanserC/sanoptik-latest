@@ -2,7 +2,7 @@
 
 İzmir Bayraklı’da hizmet veren **SAN Optik**’in müşteriler için hazırlanmış resmi internet sitesidir. Gözlük, lens ve göz sağlığı hizmetleri hakkında bilgi alabilir, markaları inceleyebilir, randevu talep edebilir ve mağazayla kolayca iletişime geçebilirsiniz.
 
-**Canlı site:** [www.sanoptik.com](https://www.sanoptik.com)
+**Canlı site:** [www.sanoptik.com](https://www.sanoptik.tr)
 
 ---
 
