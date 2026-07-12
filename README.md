@@ -47,7 +47,6 @@ Randevu saatleri mağaza çalışma saatlerine göre **30 dakikalık aralıklarl
 |---|---|
 | **Adres** | Adalet, 1586/13. Sk. No:1C, 35530 Bayraklı / İzmir |
 | **Telefon** | [+90 534 567 98 08](tel:+905345679808) |
-| **E-posta** | info@sanoptik.com |
 | **Çalışma saatleri** | Pazartesi – Cumartesi, 09:00 – 19:30 |
 | **Instagram** | [@san_optikk](https://www.instagram.com/san_optikk) |
 | **Konum (Google Maps)** | [Haritada aç](https://maps.app.goo.gl/zEch6UtY7GS88TLV8) |
