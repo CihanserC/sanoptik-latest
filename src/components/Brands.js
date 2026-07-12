@@ -44,10 +44,18 @@ const brandNames = [
   'Just Cavalli'
 ];
 
-// .png varsayılan uzantı olarak varsayılıyor
+const findBrandImage = (name) => {
+  const normalizedName = name.toLowerCase();
+  const match = Object.entries(brandImages).find(([filename]) => {
+    const baseName = filename.replace(/\.(png|jpe?g|svg)$/i, '');
+    return baseName.toLowerCase() === normalizedName;
+  });
+  return match ? match[1] : `https://via.placeholder.com/100x60?text=${name}`;
+};
+
 const brands = brandNames.map((name) => ({
   name,
-  image: brandImages[`${name}.png`] || brandImages[`${name}.jpg`] || `https://via.placeholder.com/100x60?text=${name}`
+  image: findBrandImage(name),
 }));
 
 const Brands = () => {

@@ -1,8 +1,12 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import { LanguageProvider } from './context/LanguageContext';
+import QuickInfoBar from './components/QuickInfoBar';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders contact info bar', () => {
+  render(
+    <LanguageProvider>
+      <QuickInfoBar />
+    </LanguageProvider>
+  );
+  expect(screen.getByText(/534 567 98 08/)).toBeInTheDocument();
 });
