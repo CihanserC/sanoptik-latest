@@ -46,7 +46,7 @@ const Header = () => {
         <div className="flex justify-between h-16 items-center">
           <Link to="/" className="flex items-center space-x-3 focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded-lg">
             <img src={logo} alt="SAN Optik Logo" className="h-12 w-12 object-contain" />
-            <span className={`text-2xl font-bold tracking-wide ${lightHeader ? 'text-emerald-600' : 'text-white'}`}>
+            <span className={`font-sans text-2xl font-bold tracking-tight ${lightHeader ? 'text-emerald-600' : 'text-white'}`}>
               SAN OPTİK
             </span>
           </Link>

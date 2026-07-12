@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# SAN Optik — Resmi Web Sitesi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+İzmir Bayraklı’da hizmet veren **SAN Optik**’in müşteriler için hazırlanmış resmi internet sitesidir. Gözlük, lens ve göz sağlığı hizmetleri hakkında bilgi alabilir, markaları inceleyebilir, randevu talep edebilir ve mağazayla kolayca iletişime geçebilirsiniz.
 
-## Available Scripts
+**Canlı site:** [www.sanoptik.com](https://www.sanoptik.com)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Site Ne İşe Yarar?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Bu site; mağazayı tanıtmak, hizmetleri anlatmak ve müşterilerin size ulaşmasını kolaylaştırmak için hazırlanmıştır. Telefon aramadan önce bilgi almak, konumu görmek veya WhatsApp üzerinden randevu istemek isteyenler için tek adres burasıdır.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Sayfalar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Sayfa | Adres | Ne bulursunuz? |
+|--------|--------|----------------|
+| Ana Sayfa | `/` | Tanıtım, hizmetler, markalar, galeri, yorumlar ve sık sorulan sorular |
+| Hizmetler | `/hizmetler` | Sunulan optik hizmetlerin listesi |
+| Markalar | `/markalar` | Çalışılan gözlük ve lens markaları |
+| Mağazamız | `/magazamiz` | Mağaza fotoğrafları ve vitrin |
+| Hakkımızda | `/hakkimizda` | SAN Optik hakkında bilgi |
+| Blog | `/blog` | Göz sağlığı ve gözlük seçimiyle ilgili yazılar |
+| SSS | `/sss` | Sık sorulan sorular |
+| İletişim | `/iletisim` | Adres, harita, iletişim bilgileri ve randevu formu |
+| Randevu | `/randevu` | WhatsApp ile randevu talebi formu |
 
-### `npm run build`
+Site **Türkçe** ve **İngilizce** olarak kullanılabilir; sağ üstteki dil seçeneğiyle geçiş yapılır.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Nasıl Randevu Alınır?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Randevu** veya **İletişim** sayfasına gidin.
+2. Ad, telefon, tarih, saat ve hizmet bilgilerini doldurun.
+3. **Gönder** butonuna tıklayın.
+4. WhatsApp açılır; mesajı kontrol edip göndermeniz yeterlidir.
 
-### `npm run eject`
+Randevu saatleri mağaza çalışma saatlerine göre **30 dakikalık aralıklarla** seçilebilir.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## İletişim Bilgileri
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| | |
+|---|---|
+| **Adres** | Adalet, 1586/13. Sk. No:1C, 35530 Bayraklı / İzmir |
+| **Telefon** | [+90 534 567 98 08](tel:+905345679808) |
+| **E-posta** | info@sanoptik.com |
+| **Çalışma saatleri** | Pazartesi – Cumartesi, 09:00 – 19:30 |
+| **Instagram** | [@san_optikk](https://www.instagram.com/san_optikk) |
+| **Konum (Google Maps)** | [Haritada aç](https://maps.app.goo.gl/zEch6UtY7GS88TLV8) |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Sayfanın sağ alt köşesindeki **WhatsApp** butonuyla da doğrudan yazabilirsiniz.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Sitede Öne Çıkan Özellikler
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **27’den fazla marka** — Gözlük ve güneş gözlüğü seçenekleri
+- **Google yorumları** — Müşteri değerlendirmeleri
+- **Online randevu talebi** — WhatsApp üzerinden hızlı iletişim
+- **Göz sağlığı blogu** — Bilgilendirici içerikler
+- **Mobil uyumlu tasarım** — Telefon ve tabletten rahat kullanım
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Müşteriler İçin Kısa Notlar
 
-### Analyzing the Bundle Size
+- Reçeteli ve reçetesiz gözlük seçenekleri hakkında detay için **Hizmetler** ve **SSS** sayfalarına bakabilirsiniz.
+- Mağazayı ziyaret etmeden önce **çalışma saatlerini** ve **konumu** siteden kontrol edebilirsiniz.
+- Sorularınız için telefon, WhatsApp veya iletişim formunu kullanabilirsiniz.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Site Sahibi / İçerik Güncellemesi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Metinler, iletişim bilgileri, marka listesi, blog yazıları ve sık sorulan sorular proje dosyalarında tutulur. Güncelleme yapılacaksa geliştirici ekibinize şu bilgileri iletmeniz yeterlidir:
 
-### Advanced Configuration
+- Yeni telefon, adres veya çalışma saati
+- Eklenmesi veya kaldırılması istenen marka / hizmet
+- Blog veya SSS’e eklenecek yeni içerik
+- Kampanya veya duyuru metinleri
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Teknik kurulum ve yayınlama işlemleri geliştirici tarafından yürütülür.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*SAN Optik — Gözleriniz bizim için değerli.*

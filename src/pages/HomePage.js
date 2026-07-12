@@ -59,7 +59,7 @@ const HomePage = () => {
             initial={prefersReducedMotion ? false : { opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-5xl md:text-7xl font-extrabold tracking-wide"
+            className="font-sans text-5xl md:text-7xl font-bold tracking-tight"
           >
             SAN OPTİK
           </motion.h1>
